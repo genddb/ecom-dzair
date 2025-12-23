@@ -1,0 +1,50 @@
+/* ==========================================================================
+   6. أدوات الاستعجال: العداد والإشعارات (Urgency Tools)
+   ========================================================================== 
+*/
+/* العداد التنازلي */
+.urgency-timer { background: #fff5f5; border: 1px dashed #e53e3e; padding: 20px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; }
+[data-theme='dark'] .urgency-timer { background: #2d1a1a; border-color: #fc8181; }
+.timer-msg { color: #c53030; font-weight: bold; margin-bottom: 15px; font-size: 16px !important; }
+.timer-grid { display: flex; justify-content: center; gap: 10px; }
+.timer-item { background: var(--text-color); color: var(--bg-color); padding: 10px; border-radius: 8px; min-width: 65px; display: flex; flex-direction: column; }
+.timer-item span { font-size: 24px; font-weight: bold; }
+
+/* إشعار المبيعات (Capsule Frame) */
+.sales-notification-top {
+    position: relative !important; display: none; max-width: 500px !important; 
+    margin: 15px auto !important; background: var(--bg-color) !important; 
+    border: 1.5px solid var(--accent-color) !important; border-radius: 50px !important; 
+    padding: 8px 25px !important; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important; 
+    z-index: 1000; overflow: hidden;
+}
+.notify-content { display: flex; align-items: center; gap: 12px; }
+.notify-icon { background: var(--accent-color); color: #fff; min-width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+.notify-text { text-align: right; font-size: 14px !important; color: var(--text-color); white-space: nowrap; }
+
+/* ==========================================================================
+   5. أدوات التحويل: الاستمارة والواتساب (Conversion Tools)
+   ========================================================================== 
+*/
+.order-container {
+    background: var(--card-bg) !important; border: 2px solid var(--accent-color); 
+    border-radius: 15px; max-width: 500px !important; margin: 40px auto !important; 
+    padding: 25px !important; display: block !important; font-size: 16px !important; line-height: 1.6 !important;
+}
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 16px; }
+input, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-color); color: var(--text-color); font-family: inherit; }
+
+.qty-box { display: flex; align-items: center; justify-content: center; gap: 15px; margin: 20px 0; }
+.qty-btn { width: 40px; height: 40px; border-radius: 50%; border: none; background: var(--accent-color); color: white; cursor: pointer; font-size: 20px; }
+#qtyInput { width: 60px; text-align: center; font-size: 18px; font-weight: 700; border:none; }
+
+.price-calc { background: #f0f7ff; padding: 15px; border-radius: 10px; margin-bottom: 20px; color: #1e293b; }
+[data-theme='dark'] .price-calc { background: #334155; color: white; }
+.total-line { font-size: 22px !important; font-weight: 700; color: #16a34a; }
+#submitBtn { width: 100%; padding: 15px; background: #16a34a; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: 700; cursor: pointer; }
+
+/* زر الواتساب */
+.whatsapp-btn { position: fixed; bottom: 25px; right: 25px; z-index: 9999; display: none; transition: 0.3s; }
+.wa-icon-container { background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; }
+
